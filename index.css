@@ -1,0 +1,262 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#navbar{
+position: absolute;
+height: 50px;
+width: 99%;
+padding: 5px;
+}
+
+#navbar ul{
+display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    opacity: 0.4;    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+
+}
+
+#navbar li{
+    display: flex;
+    list-style: none;
+    padding: 10px 10px;
+    font-family: "Bree Serif", serif;}
+
+#navbar li a{
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px 35px;
+    color: aliceblue;
+}
+
+#navbar li a:hover{
+    color: black;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 3px 35px;
+    background-color: aliceblue;
+    border-radius: 15px;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 820px;
+    font-family: "Baloo 2", sans-serif;
+
+}
+#home::before{
+    content: "";
+    background: url(/background.jpg) no-repeat center center/cover; 
+    position: absolute;
+    opacity: 0.89;    
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+}
+
+#home h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+#home p{
+    color:aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 10px;
+}
+
+#home button{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 12px;
+}
+
+/* Services section  */
+#services-container {
+    padding: 20px;
+}
+
+#services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 20px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    width: 300px;
+    text-align: center;
+}
+
+#services .box img {
+    height: 160px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+#services .box p {
+    font-size: 0.9rem;
+}
+
+
+
+#clients{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+#client-section h1{
+    display: flex;
+    justify-content: center;
+}
+#clients img{
+    height: 200px;
+    width: 250px;
+    padding: 50px 20px;
+}
+#client-section::before{
+    content: "";
+    background: url(/Food-HD-Wallpaper.jpg) no-repeat center center/cover;
+    position: absolute;
+    opacity: 0.89;    
+    height: 395px;
+    width: 100%;
+    z-index: -1;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('../contact.jpg') no-repeat center center/cover;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input, 
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+} 
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+   font-size: 1.3rem;
+   font-family: 'Bree Serif', serif;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+   
+}
+
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar li {
+        margin: 5px 0;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    #home p {
+        font-size: 0.9rem;
+    }
+
+    #home button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    #services .box {
+        width: 90%;
+    }
+
+    #clients img {
+        height: 80px;
+    }
+}
+
+.center{
+    margin-top: 30px;
+}
+@media (max-width: 480px) {
+    #navbar li a {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    #home h1 {
+        font-size: 1.5rem;
+    }
+
+    #home p {
+        font-size: 0.8rem;
+    }
+
+    #home button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    #services .box {
+        width: 100%;
+    }
+
+    #clients img {
+        height: 60px;
+    }
+}
+/* #services img{
+    height: 200px;
+    width: 200px;
+} */
